@@ -1,1 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
 
+}
+header{
+ text-align: center;
+ margin-top: 50px;
+ font-family: 'Courier New', Courier, monospace;
+}
+.test{
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+}
+#container_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#colored {
+    background-color: black;
+}
+.small{
+    border: 1px solid black;
+    height: 10px;
+    width: 10px;
+}
+.btnLlocation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.btnLlocation button{
+    font-size: 40px;
+    border-radius: 20px;
+}
