@@ -8,6 +8,7 @@
     <title>Etch a sketch</title>
 </head>
 <body>
+
     <header>
         <h1>Etch a sketch</h1>
     </header>
@@ -16,12 +17,18 @@
 
         </div>
     </section>
-    <section>
+    <section class="menu">
         <div class="btnLlocation">
             <button class="btn1" id='clear'>Clear</button>
-            <button class="btn1" id='gridsSize'>Change grid</button>
+            <input title="Select the grid size" type="range" min="16" max="100" value="16" class="slider" id="myRange">
         </div>
     </section>
+    <footer>
+        <div class="info">
+            <p>Made by <a href="https://github.com/Leon-ER" target="_blank">Leon</a></p>
+            <p>Following the OTP</p>
+        </div>
+    </footer>
 </body>
 <script src="javascript.js"></script>
 </html>

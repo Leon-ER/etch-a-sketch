@@ -1,24 +1,24 @@
 body{
     padding: 0;
     margin: 0;
-
+    background-image: linear-gradient(cyan, lightblue, cyan);
 }
 header{
  text-align: center;
- margin-top: 50px;
  font-family: 'Courier New', Courier, monospace;
+ font-style: italic;
 }
-.test{
-    border: 1px solid transparent;
 
+.divsBorder{
+    border: 1px solid transparent;
 }
 #container_main{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    width: 700px;
-    height: 700px;
+    width: 650px;
+    height: 650px;
     border: 1px solid black;
 
 }
@@ -35,18 +35,36 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .btnLlocation button{
-    font-size: 40px;
+    font-size: 25px;
     border-radius: 20px;
 }
 .main_section{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: row; */
 }
-.sizing{
-    /* max-height: 900px; */
+.menu{
+    height: 100px;
+}
+.btn1{
+    font-family: sans-serif;
+    margin-right: 50px;
+    background-color: lightsteelblue;
+    border-color: lightsteelblue;
+}
+.btn1:hover{
+    transform: scale(1.2);
+}
+.slider:hover{
+    transform: scale(1.2);
+}
+footer{
+    text-align: center;
+}
+.info p a{
+    color: rgb(27, 85, 133);
+    text-decoration: none;
 }

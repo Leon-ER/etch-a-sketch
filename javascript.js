@@ -17,7 +17,7 @@ function gridGenerate(gridSize, newSquareSize) {
     // fill the columns with the containers
     for (let a = 0; a < gridSize; a++) {
       div = document.createElement("div");
-      div.classList.add("test");
+      div.classList.add("divsBorder");
       // changes the size of the containers
       div.style.width = newSquareSize + "px";
       div.style.height = newSquareSize + "px";
@@ -25,7 +25,7 @@ function gridGenerate(gridSize, newSquareSize) {
     }
   }
   // adds the eventlistener to change the colors of the containers
-  const divhover = document.querySelectorAll(".test");
+  const divhover = document.querySelectorAll(".divsBorder");
   divhover.forEach((div) => {
     div.addEventListener("mouseover", () => {
       div.classList.add("colored");
@@ -45,20 +45,16 @@ gridGenerate(gridSize, size);
 // Button removes the previous eventlistener that was added to change the colors to "clear the grid back to white"
 const btn = document.querySelector("#clear");
 btn.addEventListener("click", () => {
-  const divhover = document.querySelectorAll(".test");
+  const divhover = document.querySelectorAll(".divsBorder");
   divhover.forEach((div) => {
     div.classList.remove("colored");
   });
 });
-// Button thats shows a prompt where you can select the amount of grids you want and sets the max to 100
-const btn1 = document.querySelector("#gridsSize");
-btn1.addEventListener("click", () => {
-  gridSize = prompt("write the grid size (max 100)");
-  if(gridSize > 100){
-    alert("Grid size max is 100")
-  }
-  else{
+// Slider thats lets user select the value of the grid (min :16 max : 100)
+let slider = document.getElementById('myRange');
+slider.oninput = function(){
+  gridSize = slider.value
   let newSquareSize = squareSize();
   gridGenerate(gridSize, newSquareSize);
 }
-});
+
