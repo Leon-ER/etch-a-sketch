@@ -9,16 +9,21 @@ header{
  font-family: 'Courier New', Courier, monospace;
 }
 .test{
-    border: 1px solid black;
-    height: 35px;
-    width: 35px;
+    border: 1px solid transparent;
+
 }
 #container_main{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+
 }
-#colored {
+
+.colored {
     background-color: black;
 }
 .small{
@@ -35,4 +40,13 @@ header{
 .btnLlocation button{
     font-size: 40px;
     border-radius: 20px;
+}
+.main_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+}
+.sizing{
+    /* max-height: 900px; */
 }
